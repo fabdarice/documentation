@@ -68,7 +68,7 @@ These flags are shared by both the beacon node, validator client, and slasher.
 | `--tracing-process-name` | The name to apply to tracing tag \"process_name\"
 | `--trace-sample-fraction` | Indicate what fraction of P@P messages are sampled for tracing. Default: 0.20
 | `--disable-monitoring` | Disable all monitoring service.
-| `--monitoring-port` | Port used by prometheus for listening and responding to messages. Default: 8080
+| `--monitoring-port` | Port used by prometheus for listening and responding to messages. Default: Beacon:8080, Validator:8081, Slasher: 8082
 | `--force-clear-db` | Clear any previously stored data at the data directory.
 | `--clear-db` | Prompt for clearing any previously stored data at the data directory.
 | `--log-format` | Specify log formatting. Supports: text, json, fluentd.
