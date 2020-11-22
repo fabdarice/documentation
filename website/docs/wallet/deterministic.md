@@ -25,7 +25,8 @@ To start using the HD wallet, you can create a new wallet using
 ```
 
 :::info
-You'll need to set a **strong** password for your new HD wallet, containing at least 1 uppercase letter, 1 number, a special character, and be at least 8 characters long. Any unicode characters can be used for your wallet password.
+You'll need to set a **strong** password for your new HD wallet, containing at least 1 uppercase letter, 1 number, a special character, and be at least 8 characters long. Any unicode characters can be used for your wallet password. 
+Note: Imported accounts are not supported.If you wish to import accounts, please refer to the [Imported wallet](https://docs.prylabs.network/docs/wallet/nondeterministic#import-validator-accounts) page.
 :::
 
 and selecting **HD** wallet when prompted during an interactive process. You can also create a wallet **non-interactively** by using the following command line flags, which are also viewable by typing `./prysm.sh validator wallet create --help`.
@@ -33,7 +34,7 @@ and selecting **HD** wallet when prompted during an interactive process. You can
 | Flag          | Usage         |
 | ------------- |:-------------|
 | `--wallet-dir` | Path to a wallet directory (default: "$HOME/Eth2Validators/prysm-wallet-v2")
-| `--keymanager-kind`     | Type of wallet to create, either "direct", "derived, or "remote" (default "derived")
+| `--keymanager-kind`     | Type of wallet to create, either "derived, or "remote" (default "derived") - Imported accounts are not supported
 | `--wallet-password-file`     | Path to a plain-text, password.txt file to lock your wallet
 
 Here's a full example on how to create an HD wallet at `$HOME/myhdwallet`
